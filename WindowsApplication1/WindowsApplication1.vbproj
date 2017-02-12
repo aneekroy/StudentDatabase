@@ -47,6 +47,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -72,11 +73,58 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="DeleteRecord.Designer.vb">
+      <DependentUpon>DeleteRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayRecord.Designer.vb">
+      <DependentUpon>DisplayRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaysingleRecord.Designer.vb">
+      <DependentUpon>DisplaysingleRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaysingleRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.vb">
+      <DependentUpon>EditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,6 +144,33 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DeleteRecord.resx">
+      <DependentUpon>DeleteRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayRecord.resx">
+      <DependentUpon>DisplayRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaysingleRecord.resx">
+      <DependentUpon>DisplaysingleRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
